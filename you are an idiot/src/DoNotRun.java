@@ -1,9 +1,6 @@
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
+
 import java.util.Random;
-import java.util.Scanner;
-import javazoom.jl.decoder.JavaLayerException;
-import javazoom.jl.player.Player;
+
 
 public class DoNotRun{
 
@@ -11,10 +8,10 @@ public class DoNotRun{
 
 			System.out.println("x out any window to stop the payload");
 			Thread.sleep(2000);
-			mp3player player = new mp3player();
 			Random rand = new Random();
-			new popup(400, 400);
+			mp3player player = new mp3player();
 			player.start();
+			new popup(400, 400);
 			Thread.sleep(10000);
 
 
@@ -40,7 +37,7 @@ public class DoNotRun{
 				mp3player temp = new mp3player();
 				temp.start();
 				new popup(rand.nextInt(1500),rand.nextInt(1500));
-				Thread.sleep(500);
+				Thread.sleep(500); //start mp3
 			}
 			imSoSorry();
 			Thread.sleep(5000);
@@ -55,7 +52,7 @@ public class DoNotRun{
 	public static void imSoSorry() throws InterruptedException
 	{
 		Random rand = new Random();
-		mp3player temp = new mp3player();
+		//start mp3
 		popup[] popups = new popup[50];
 		for(int i =0; i<popups.length;i++)
 		{
