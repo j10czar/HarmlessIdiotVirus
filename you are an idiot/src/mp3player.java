@@ -20,7 +20,7 @@ public class mp3player extends Thread{
 	}
 	
 	public static void PlayMp3() throws FileNotFoundException, JavaLayerException {
-		FileInputStream fileInputStream = new FileInputStream("youareanidiot.mp3");
+		FileInputStream fileInputStream = new FileInputStream("Resources/youareanidiot.mp3");
 		Player player = new Player(fileInputStream);
 		player.play();
 }
